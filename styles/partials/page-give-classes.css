@@ -110,6 +110,17 @@
     background: var(--color-secondary-dark);
 }
 
+.schedule-item #trash {
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    margin-top: 1.6rem;
+    float: right;
+}
+
 .schedule-item+.schedule-item {
     margin-top: 3.2rem;
     padding-top: 3.2rem;
@@ -132,13 +143,25 @@
 
     .schedule-item {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 10fr 5fr 5fr 1fr;
         column-gap: 1.6rem;
     }
 
     #page-give-classes #schedule-items .select-block+.input-block,
     #page-give-classes #schedule-items .input-block+.input-block {
         margin-top: 0;
+    }
+
+    .schedule-item .block-trash {
+        position: relative;
+    }
+
+    .schedule-item #trash {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateXY(-50%);
     }
 
     #page-give-classes main footer {
