@@ -31,7 +31,8 @@ const cloneField = () => {
     });
 
     // Colocar na págica
-    document.querySelector('#schedule-items').appendChild(newFieldContainer);
+    const fieldHours =  document.querySelector('#schedule-items');
+    fieldHours.appendChild(newFieldContainer);
 }
 
 // Procurar o botao
