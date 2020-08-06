@@ -110,15 +110,17 @@
     background: var(--color-secondary-dark);
 }
 
-.schedule-item #trash {
+.schedule-item .block-trash {
+    margin-top: 1.6rem;
+    text-align: right;
+}
+
+.schedule-item .trash {
     width: 32px;
     height: 32px;
     background: none;
     border: none;
-    display: block;
     cursor: pointer;
-    margin-top: 1.6rem;
-    float: right;
 }
 
 .schedule-item+.schedule-item {
@@ -153,11 +155,12 @@
     }
 
     .schedule-item .block-trash {
+        margin-top: 0;
+        text-align: left;
         position: relative;
     }
 
-    .schedule-item #trash {
-        margin-top: 0;
+    .schedule-item .trash {
         position: absolute;
         top: 50%;
         width: 100%;

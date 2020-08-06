@@ -7,11 +7,12 @@ const cloneField = () => {
     divTrash.setAttribute('class', 'block-trash');
 
     const trash = document.createElement('button');
-    trash.setAttribute('id', 'trash');
+    trash.setAttribute('class', 'trash');
     trash.setAttribute('type', 'button');
 
     const trashIcon = document.createElement('img');
     trashIcon.setAttribute('src', '/images/icons/trash.png');
+    trashIcon.setAttribute('alt', 'Lixo pra remover campo do horário.');
     trashIcon.setAttribute('width', '32px');
     trashIcon.setAttribute('height', '32px');
 
