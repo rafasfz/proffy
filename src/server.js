@@ -1,3 +1,5 @@
+const PORT = process.env.PORT || 3333
+
 const proffys = [
     { 
         name: "Diego Fernandes",
@@ -105,7 +107,7 @@ server
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
 
-.listen(5500)
+.listen(PORT)
 
 /*
 BASE
