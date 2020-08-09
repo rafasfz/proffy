@@ -1,0 +1,29 @@
+#page-success {
+    background: url('../../images/success-background.svg') var(--color-primary-dark);
+}
+
+#page-success #container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4.8rem;
+}
+
+#page-success #container h1 {
+    color: var(--color-box-base);
+    font: 700 5.2rem Archivo;
+    text-align: center;
+}
+
+#page-success #container p {
+    color: var(--color-small-info);
+    font: 500 2.4rem Archivo;
+    text-align: center;
+    margin-top: .8rem;
+}
+
+@media (min-width: 1100px) {
+    #page-success #container p {
+        font: 500 1.6rem Archivo;
+    }
+}

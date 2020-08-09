@@ -9,7 +9,7 @@ const {
     pageLanding,
     pageStudy,
     pageGiveClasses,
-    saveClasses
+    saveClasses,
 } = require('./pages')
 
 // configurar nunjuck
@@ -27,7 +27,7 @@ server
 .get('/', pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
-.post('/save-classes', saveClasses)
+.post('/success', saveClasses)
 
 .listen(PORT)
 
